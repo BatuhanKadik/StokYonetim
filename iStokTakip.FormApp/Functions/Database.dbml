@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="StokTakip" Class="DatabaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=BATU\SQLEXPRESS;Initial Catalog=StokTakip;Persist Security Info=True;User ID=sa" SettingsObjectName="iStokTakip.FormApp.Properties.Settings" SettingsPropertyName="StokTakipConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TBL_STOKGRUPLARI" Member="TBL_STOKGRUPLARIs">
+    <Type Name="TBL_STOKGRUPLARI">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GRUPADI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GRUPKODU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GRUPSAVEUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GRUPSAVEDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="GRUPEDITUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GRUPEDITDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_STOKLAR" Member="TBL_STOKLARs">
+    <Type Name="TBL_STOKLAR">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="STOKBARKOD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="STOKKODU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="STOKADI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="STOKBIRIM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="STOKALISFIYAT" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="STOKSATISFIYAT" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="STOKALISKDV" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="STOKSATISKDV" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="STOKGRUPID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="STOKRESIM" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="STOKSAVEUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="STOKSAVEDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="STOKEDITUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="STOKEDITDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
